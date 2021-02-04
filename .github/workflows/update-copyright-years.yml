@@ -2,7 +2,8 @@ name: Update copyright year(s) in license file
 
 on:
   schedule:
-    - cron: "35 6 11 1 *"
+
+    - cron: "55 7 1 1 *"
 
 jobs:
   run:
@@ -14,7 +15,14 @@ jobs:
     - uses: FantasticFiasco/action-update-license-year@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        path: README.md
+        path: |
+          README.md
+          packages/core/README.md
+          packages/i18n/README.md
+          packages/sampler/README.md
+          packages/spotlight/README.md
+          packages/ui/README.md
+          packages/webos/README.md
         branchName: license/{{currentYear}}
         commitTitle: update license
         commitBody: Let's keep legal happy.
