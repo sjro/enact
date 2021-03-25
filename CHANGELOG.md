@@ -3,6 +3,7 @@
 The following is a curated list of changes in the Enact project, newest changes on the top.
 
 TEST RELEASE MERGE
+TEST
 
 ## [3.4.11] - 2020-12-11
 
